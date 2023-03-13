@@ -1,0 +1,18 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ML API</title>
+ </head>
+  <body>
+<div class="login">
+   <h1>Predict a series of [1,2],[2,4],[3,6]....</h1>
+<form action="{{ url_for('predict')}} "method="post">
+<input type="text" name="X" placeholder="X" required="required" />
+<button type="submit" class="btn btn-primary btn-block btn-Large">Predict</button>
+ </form>
+<br>
+ <br> {{prediction}}
+ </div>
+ </body>
+</html>
